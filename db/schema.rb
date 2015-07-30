@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20150724234954) do
 
   create_table "recipes", force: true do |t|
     t.string   "dish"
-    t.text     "ingredient"
-    t.text     "steps"
+    t.string   "ingredient"
+    t.string   "steps"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

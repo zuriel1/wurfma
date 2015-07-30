@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wurfma</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>Wurfma - The Award Winning Weekly Food Farm Market</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="triangle">
+						<br />
+						Every
+						<br />
+						Saturday
+						<br />
+						10am - 2pm
+					</div>
+				</div>
+				<div class="col-xs-6 text-center">
+					<div class="slogan"><h2>The Award Winning Weekly Food Farm Market</h2> 
+					</div>
+				
+					<div class="links">
+						<%=link_to 'Red Bream Recipe', 'bream' %>
 
-<%= yield %>
+						<%= link_to 'Chocolate Tart', 'desert' %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
+	<%= yield %>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3 footer-blurb text-center">
+					Recipes by <a href="http://twitter.com/@alanstewart_" target="_blank">Alan Stewart</a> | Photography ©Tobyallenphotography | Site and Logo by <a href="http://https://github.com/zuriel1" target="_blank">Zuriel</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
