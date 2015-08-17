@@ -1,6 +1,7 @@
 Wurfma::Application.routes.draw do
   root 'recipes#index'
-
+resources :recipes
+get 'new', :to => 'recipes#new'
   get 'bream', :to => 'recipes#bream'
   get 'pork', :to => 'recipes#pork'
   get 'desert', :to => 'recipes#desert'
